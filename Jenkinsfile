@@ -13,8 +13,9 @@ pipeline {
     }
     stage('CompileToWAR') {
       steps {
-        dir(path: 'trunk')
+        dir(path: 'trunk'){
         sh '/opt/oracle/middleware/oracle_common/modules/org.apache.maven_3.2.5/bin/mvn package'
+		}
       }
     }
   }
