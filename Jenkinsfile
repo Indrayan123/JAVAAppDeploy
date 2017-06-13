@@ -11,6 +11,5 @@ pipeline {
         echo 'Initiating the Build Process'
       }
     }
-   
   }
 }
