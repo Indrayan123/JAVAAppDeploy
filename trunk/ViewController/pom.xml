@@ -74,11 +74,11 @@
       <plugin> 
     <groupId>com.oracle.weblogic</groupId> 
         <artifactId>weblogic-maven-plugin</artifactId> 
-        <version>12.2.1-0-0</version> 
-		<properties>
-		
-		</properties>
-        <configuration>             
+        <version>12.2.1-0-0</version> 		
+        <configuration>  
+			<adminurl>${serverURL}</adminurl>
+            <user>${user}</user> 
+            <password>${password}</password>		
             <upload>true</upload> 
             <action>deploy</action> 
             <remote>false</remote> 

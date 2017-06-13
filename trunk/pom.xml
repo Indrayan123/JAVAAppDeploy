@@ -8,7 +8,7 @@
   <properties>
   <serverURL>${env.weblogicurl}</serverURL>
   <user>${env.weblogicuname}</user>
-  <user>${env.weblogicpwd}</user>
+  <password>${env.weblogicpwd}</password>
   </properties>
   <build>
     <resources>
