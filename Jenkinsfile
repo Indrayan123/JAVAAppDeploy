@@ -13,7 +13,7 @@ pipeline {
     }
     stage('CompileToWAR') {
       steps {
-        dir(path: '/trunk')
+        dir(path: 'pwd()/trunk')
         sh '/opt/oracle/middleware/oracle_common/modules/org.apache.maven_3.2.5/bin/mvn package'
       }
     }
